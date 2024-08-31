@@ -22,21 +22,56 @@ public class Desafio {
 		System.out.println(numero + " não pertence!");
 	}
 		
+	
+	//2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, 
+	//seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
+	
+	String string = "Amauri";
+	System.out.println(aExist(string));
+	
+	
+	/* 3) Observe o trecho de código abaixo: 
+	int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE 
+	faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);
+	Ao final do processamento, qual será o valor da variável SOMA?: 77
+	
+	*/
+	int indice = 12;
+	int k = 1;
+	int soma = 0;
+	
+	while (k < indice) {
+		k = k + 1;
+		soma = soma + k;
+	}
+	System.out.println(soma);
 		
 	}
+	
+	public static int aExist(String string) {
+		int count = 0;		
+		for(int i = 0; i < string.length(); i++) {
+			char ch = string.charAt(i);
+			if (ch == 'a' || ch == 'A') {
+				count++;
+			}
+		}
+		
+		
+		return count;
+	
+		
+	}
+	
 
 	public static boolean pertenceFibonacci(int num) {
 		if (num < 0) {
 			return false;
-		}
-		
-		int a = 0, b = 1;
-		
+		}	
+		int a = 0, b = 1;	
 		if (num == a || num == b) {
 			return true;
-		}
-		
-		
+		}		
 		while (b < num) {
 			
 			int proximo = a + b;
@@ -45,11 +80,8 @@ public class Desafio {
 			
 			if (b == num) {
 				return true;
-			}
-			
+			}	
 		}
-		return false;
-		
-		
+		return false;	
 	}
 }

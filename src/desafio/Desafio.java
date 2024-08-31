@@ -56,6 +56,26 @@ public class Desafio {
 	f) 2,10, 12, 16, 17, 18, 19, _20_
 */		
 	
+/* 
+ 5) Você está em uma sala com três interruptores, 
+ cada um conectado a uma lâmpada em salas diferentes. 
+ Você não pode ver as lâmpadas da sala em que está, 
+ mas pode ligar e desligar os interruptores quantas vezes quiser. 
+ Seu objetivo é descobrir qual interruptor controla qual lâmpada. 
+ Como você faria para descobrir, usando apenas duas idas até uma 
+ das salas das lâmpadas, qual interruptor controla cada lâmpada?  
+  
+  Resposta: 
+ 	Primeiro: ligaria o interruptor A e deixaria ligado por 5 a 10 minutos para a lampada esquentar
+ 	- Segundo deixaria o interruptor B ligado e iria para a sala das lampadas
+ 	- A lampada que estivesse quente/morna seria a A e a que estivesse ligada seria a B 
+ 	  	e a que estivesse deligada seria a C.
+ 	 
+  
+  
+*/
+	
+	
 		
 }
 		
